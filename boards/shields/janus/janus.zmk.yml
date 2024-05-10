@@ -1,0 +1,12 @@
+file_format: "1"
+id: janus
+name: Janus
+type: shield
+url: https://github.com/jsbursik/JanusKeyboard
+requires: [pro_micro]
+features:
+  - keys
+  - display
+siblings:
+  - janus_left
+  - janus_right

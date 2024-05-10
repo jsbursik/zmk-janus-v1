@@ -1,0 +1,24 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |  ESC  |  Q  |  W  |  E  |  R  |    T    |                                     |    Y    |  U  |   I   |   O   |  P  | BSPC |
+// |  TAB  |  A  |  S  |  D  |  F  |    G    |                                     |    H    |  J  |   K   |   L   |  ;  |  \   |
+// | SHIFT |  Z  |  X  |  C  |  V  |    B    |                                     |    N    |  M  |   ,   |   .   |  /  |  '   |
+// | LCTRL |     |     |     |-----|  SUPER  |  SPACE  |      |  |  RET  |  SPACE  |  R ALT  |-----| L BKT | R BKT |  -  |  =   |
+            bindings = <
+    &kp ESC    &kp Q        &kp W        &kp E      &kp R      &kp T                                           &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
+    &kp TAB    &kp A        &kp S        &kp D      &kp F      &kp G                                           &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp BSLH
+    &kp LSHIFT &kp Z        &kp X        &kp C      &kp V      &kp B                                           &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp SQT
+    &kp LCTRL  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR            &kp LGUI &kp SPACE &none      &kp RET &kp SPACE &kp RALT            &kp LBKT  &kp RBKT  &kp MINUS &kp EQUAL
+                                 
+            >;
+        };
+    };
+};

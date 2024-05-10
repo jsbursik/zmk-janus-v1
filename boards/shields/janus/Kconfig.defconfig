@@ -1,0 +1,16 @@
+if SHIELD_JANUS_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Janus"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_JANUS_LEFT || SHIELD_JANUS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,5 @@
+config SHIELD_JANUS_LEFT
+    def_bool $(shields_list_contains,janus_left)
+
+config SHIELD_JANUS_RIGHT
+    def_bool $(shields_list_contains,janus_right)
