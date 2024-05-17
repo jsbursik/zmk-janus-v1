@@ -2,7 +2,7 @@ file_format: "1"
 id: janus
 name: Janus
 type: shield
-url: https://github.com/jsbursik/JanusKeyboard
+url: https://github.com/jsbursik/Janus-Reversible
 requires: [pro_micro]
 features:
   - keys
